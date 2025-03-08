@@ -1,0 +1,35 @@
+{
+  "name": "tesla-mcp-server",
+  "version": "0.1.0",
+  "description": "A MCP Server for your Tesla",
+  "private": true,
+  "type": "module",
+  "bin": {
+    "tesla-mcp-server": "./build/index.js"
+  },
+  "files": [
+    "build"
+  ],
+  "scripts": {
+    "build": "tsc && node -e \"require('fs').chmodSync('build/index.js', '755')\"",
+    "prepare": "npm run build",
+    "watch": "tsc --watch",
+    "inspector": "npx @modelcontextprotocol/inspector build/index.js",
+    "get-token": "node --loader ts-node/esm src/getRefreshToken.ts",
+    "test-api": "node --loader ts-node/esm src/testConnection.ts",
+    "register": "node src/register.js",
+    "start": "node run-mcp.js"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "0.6.0",
+    "axios": "^1.8.2",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2"
+  },
+  "devDependencies": {
+    "@types/express": "^5.0.0",
+    "@types/node": "^20.11.24",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.3.3"
+  }
+}
