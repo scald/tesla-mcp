@@ -37,8 +37,8 @@ When forking or sharing this project:
 1. **Clone the repository**
 
    ```bash
-   git clone https://github.com/yourusername/tesla-mcp-server.git
-   cd tesla-mcp-server
+   git clone https://github.com/yourusername/tesla-mcp.git
+   cd tesla-mcp
    ```
 
 2. **Install dependencies**
@@ -159,7 +159,7 @@ The server provides the following tools that Claude can use:
    {
      "mcpServers": {
        "tesla-mcp-server": {
-         "command": "/absolute/path/to/tesla-mcp-server/run-mcp.js"
+         "command": "/absolute/path/to/tesla-mcp/run-mcp.js"
        }
      }
    }

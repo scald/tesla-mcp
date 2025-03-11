@@ -1,5 +1,5 @@
 {
-  "name": "tesla-mcp-server",
+  "name": "tesla-mcp",
   "version": "0.1.0",
   "description": "A MCP Server for your Tesla",
   "private": true,

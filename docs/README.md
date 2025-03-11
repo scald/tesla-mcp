@@ -13,7 +13,7 @@ To enable GitHub Pages for this repository:
 5. Select the branch (usually `main` or `master`) and the `/docs` folder
 6. Click "Save"
 
-Your site will be published at `https://[username].github.io/tesla-mcp-server/`
+Your site will be published at `https://[username].github.io/tesla-mcp/`
 
 ## Local Development
 
