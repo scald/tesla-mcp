@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tesla MCP Server - Control Your Tesla with AI</title>
+    <meta name="description"
+        content="A Model Context Protocol (MCP) server that connects to the Tesla Fleet API, allowing you to control your Tesla vehicle using Claude and other AI assistants that support MCP.">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <header>
+        <div class="container header-content">
+            <a href="#" class="logo">Tesla<span>MCP</span></a>
+            <nav>
+                <ul>
+                    <li><a href="#features">Features</a></li>
+                    <li><a href="#getting-started">Getting Started</a></li>
+                    <li><a href="#tools">MCP Tools</a></li>
+                    <li><a href="https://github.com/modelcontextprotocol/tesla-mcp-server" target="_blank">GitHub</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="container">
+            <h1>Control Your Tesla with AI</h1>
+            <p>A Model Context Protocol (MCP) server that connects to the Tesla Fleet API, allowing you to control your
+                Tesla vehicle using Claude and other AI assistants that support MCP.</p>
+            <div>
+                <a href="https://github.com/modelcontextprotocol/tesla-mcp-server" class="btn" target="_blank">View on
+                    GitHub</a>
+                <a href="#getting-started" class="btn btn-outline">Get Started</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="features">
+        <div class="container">
+            <div class="section-title">
+                <h2>Features</h2>
+                <p>Unlock the power of AI to control and monitor your Tesla vehicles</p>
+            </div>
+            <div class="features">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-power-off"></i>
+                    </div>
+                    <h3>Wake Up Vehicles</h3>
+                    <p>Wake up your Tesla from sleep mode with a simple voice command to your AI assistant.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-info-circle"></i>
+                    </div>
+                    <h3>Vehicle Information</h3>
+                    <p>Get detailed information about your Tesla vehicles, including status, battery level, and more.
+                    </p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-sync"></i>
+                    </div>
+                    <h3>Real-time Updates</h3>
+                    <p>Refresh vehicle data on demand to always have the latest information about your Tesla.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-bug"></i>
+                    </div>
+                    <h3>Debugging Tools</h3>
+                    <p>Access detailed vehicle information to help with troubleshooting and development.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="getting-started" class="bg-light">
+        <div class="container">
+            <div class="section-title">
+                <h2>Getting Started</h2>
+                <p>Follow these steps to set up the Tesla MCP Server</p>
+            </div>
+            <div class="steps">
+                <div class="step">
+                    <div class="step-number">1</div>
+                    <div class="step-content">
+                        <h3>Clone the Repository</h3>
+                        <p>Get the code from GitHub to your local machine.</p>
+                        <pre><code>git clone https://github.com/modelcontextprotocol/tesla-mcp-server.git
+cd tesla-mcp-server</code></pre>
+                    </div>
+                </div>
+                <div class="step">
+                    <div class="step-number">2</div>
+                    <div class="step-content">
+                        <h3>Install Dependencies</h3>
+                        <p>Install the required packages using pnpm or npm.</p>
+                        <pre><code>pnpm install</code></pre>
+                    </div>
+                </div>
+                <div class="step">
+                    <div class="step-number">3</div>
+                    <div class="step-content">
+                        <h3>Set Up Environment Variables</h3>
+                        <p>Create a .env file with your Tesla API credentials.</p>
+                        <pre><code>TESLA_CLIENT_ID=your_client_id
+TESLA_CLIENT_SECRET=your_client_secret
+TESLA_REFRESH_TOKEN=your_refresh_token</code></pre>
+                    </div>
+                </div>
+                <div class="step">
+                    <div class="step-number">4</div>
+                    <div class="step-content">
+                        <h3>Get a Refresh Token</h3>
+                        <p>If you don't have a refresh token, use the provided utility.</p>
+                        <pre><code>pnpm get-token</code></pre>
+                    </div>
+                </div>
+                <div class="step">
+                    <div class="step-number">5</div>
+                    <div class="step-content">
+                        <h3>Register Your Application</h3>
+                        <p>Register with Tesla's API using the provided script.</p>
+                        <pre><code>pnpm register</code></pre>
+                    </div>
+                </div>
+                <div class="step">
+                    <div class="step-number">6</div>
+                    <div class="step-content">
+                        <h3>Build and Run</h3>
+                        <p>Build the server and start it.</p>
+                        <pre><code>pnpm build
+pnpm start</code></pre>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="tools">
+        <div class="container">
+            <div class="section-title">
+                <h2>Available MCP Tools</h2>
+                <p>Tools that Claude can use to interact with your Tesla</p>
+            </div>
+            <div class="features">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-power-off"></i>
+                    </div>
+                    <h3>wake_up</h3>
+                    <p>Wakes up a Tesla vehicle from sleep mode.</p>
+                    <p><strong>Parameters:</strong> vehicle_id (required)</p>
+                    <p><strong>Returns:</strong> Current state of the vehicle</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-sync"></i>
+                    </div>
+                    <h3>refresh_vehicles</h3>
+                    <p>Refreshes the list of Tesla vehicles.</p>
+                    <p><strong>Parameters:</strong> None</p>
+                    <p><strong>Returns:</strong> Updates the internal cache of vehicles</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-bug"></i>
+                    </div>
+                    <h3>debug_vehicles</h3>
+                    <p>Shows detailed information about available vehicles.</p>
+                    <p><strong>Parameters:</strong> None</p>
+                    <p><strong>Returns:</strong> ID, vehicle_id, VIN, and state information</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="cta">
+        <div class="container">
+            <h2>Ready to Control Your Tesla with AI?</h2>
+            <a href="https://github.com/modelcontextprotocol/tesla-mcp-server" class="btn" target="_blank">View on
+                GitHub</a>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-links">
+                <a href="https://github.com/modelcontextprotocol/tesla-mcp-server">GitHub</a>
+                <a href="https://github.com/modelcontextprotocol/tesla-mcp-server/issues">Issues</a>
+                <a href="https://github.com/modelcontextprotocol/tesla-mcp-server/blob/main/LICENSE">License</a>
+            </div>
+            <div class="social-links">
+                <a href="https://github.com/modelcontextprotocol" target="_blank"><i class="fab fa-github"></i></a>
+            </div>
+            <p>&copy; 2025 Tesla MCP Server. MIT License.</p>
+        </div>
+    </footer>
+</body>
+
+</html>
