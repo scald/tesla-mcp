@@ -15,6 +15,7 @@ A Model Context Protocol (MCP) server that connects to the Tesla Fleet API, allo
 - pnpm (preferred) or npm
 - Tesla account with at least one vehicle
 - Tesla API credentials (Client ID and Client Secret)
+- Ngrok (for development and registration)
 
 ## Security Best Practices
 
