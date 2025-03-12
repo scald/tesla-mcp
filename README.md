@@ -2,6 +2,10 @@
 
 A Model Context Protocol (MCP) server that connects to the Tesla Fleet API, allowing you to control your Tesla vehicle using Claude and other AI assistants that support MCP.
 
+<a href="https://glama.ai/mcp/servers/t0ako8h64j">
+  <img width="380" height="200" src="https://glama.ai/mcp/servers/t0ako8h64j/badge" alt="Tesla Server MCP server" />
+</a>
+
 ## Features
 
 - **Wake up vehicles**: Wake up your Tesla from sleep mode
